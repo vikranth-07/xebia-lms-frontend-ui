@@ -2,6 +2,13 @@ import { Check, Pencil, Trash2 } from "lucide-react";
 import StatusBadge from "../common/StatusBadge.jsx";
 import { brand } from "../../utils/data.js";
 
+function formatOrderEmoji(order) {
+  return String(order ?? 0)
+    .split("")
+    .map((digit) => `${digit}\uFE0F\u20E3`)
+    .join("");
+}
+
 export default function ModuleRow({ item, active, onSelect, onEdit, onDelete, onToggle, isSubmodule }) {
   const accent = item.accentColor || (isSubmodule ? brand.teal : brand.velvet);
   return (
@@ -10,7 +17,9 @@ export default function ModuleRow({ item, active, onSelect, onEdit, onDelete, on
       style={{ "--module-accent": accent }}
     >
       <button className="module-select module-card-select" onClick={onSelect}>
-        <span className="order">{String(item.order).padStart(2, "0")}</span>
+        <span className="order" aria-label={`Order ${item.order}`}>
+          {formatOrderEmoji(item.order)}
+        </span>
         <span className="module-kind">{isSubmodule ? "Submodule" : "Module"}</span>
         <strong>{item.title}</strong>
         <em>/{item.slug}</em>

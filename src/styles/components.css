@@ -1,20 +1,15 @@
-  width: min(1680px, 100%);
-  margin: 0 auto;
-  padding: 32px 34px 46px;
-}
-
 .page-title {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .title-lockup {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   min-width: 0;
 }
 
@@ -23,8 +18,8 @@
 .metric-icon {
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius);
   background: #f0e8f1;
   color: var(--velvet);
@@ -33,8 +28,8 @@
 
 .page-title h1 {
   margin: 0;
-  font-size: clamp(28px, 3vw, 40px);
-  line-height: 1.08;
+  font-size: clamp(24px, 2.5vw, 32px);
+  line-height: 1.15;
 }
 
 .page-title p,
@@ -49,7 +44,7 @@
 
 .page-title p {
   margin: 6px 0 0;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .mini-logo {
@@ -63,8 +58,9 @@
 .outline,
 .ghost,
 .icon-text {
-  min-height: 44px;
-  padding: 0 18px;
+  min-height: 40px;
+  padding: 0 16px;
+  font-size: 14px;
   border-radius: var(--radius);
   font-weight: 800;
   white-space: nowrap;
@@ -109,16 +105,16 @@
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(170px, 1fr));
-  gap: 22px;
-  margin-bottom: 30px;
+  gap: 18px;
+  margin-bottom: 26px;
 }
 
 .metric {
   display: flex;
   align-items: center;
-  gap: 18px;
-  min-height: 104px;
-  padding: 24px;
+  gap: 14px;
+  min-height: 90px;
+  padding: 18px;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -127,7 +123,7 @@
 
 .metric strong {
   display: block;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1;
 }
 
@@ -151,7 +147,7 @@
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 22px;
+  gap: 18px;
 }
 
 .schema-card,
@@ -200,13 +196,13 @@
 
 .dashboard-page {
   display: grid;
-  gap: 24px;
+  gap: 20px;
 }
 
 .dashboard-masthead {
   display: grid;
   grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.5fr);
-  gap: 22px;
+  gap: 18px;
 }
 
 .dashboard-hero-stat,
@@ -221,9 +217,9 @@
 .dashboard-hero-stat {
   display: grid;
   align-content: center;
-  gap: 12px;
-  min-height: 260px;
-  padding: 28px;
+  gap: 10px;
+  min-height: 220px;
+  padding: 24px;
   color: #fff;
   background:
     linear-gradient(135deg, rgba(1, 172, 159, 0.88), rgba(108, 29, 95, 0.94)),
@@ -238,7 +234,7 @@
 }
 
 .dashboard-hero-stat strong {
-  font-size: clamp(62px, 9vw, 92px);
+  font-size: clamp(48px, 7vw, 68px);
   line-height: 0.9;
 }
 
@@ -267,22 +263,22 @@
 .dashboard-mini-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 14px;
 }
 
 .dashboard-stat {
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
-  gap: 16px;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 14px;
   align-items: start;
-  min-height: 120px;
-  padding: 22px;
+  min-height: 104px;
+  padding: 18px;
 }
 
 .dashboard-stat svg {
-  padding: 10px;
-  width: 48px;
-  height: 48px;
+  padding: 9px;
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius);
   background: #f0e8f1;
   color: var(--velvet);
@@ -300,7 +296,7 @@
 
 .dashboard-stat strong {
   display: block;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .dashboard-stat span {
@@ -319,11 +315,11 @@
 .dashboard-analytics-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-  gap: 22px;
+  gap: 18px;
 }
 
 .dashboard-panel {
-  padding: 24px;
+  padding: 20px;
 }
 
 .recent-panel {
@@ -485,10 +481,10 @@
 
 .toolbar {
   display: flex;
-  gap: 14px;
+  gap: 12px;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .search-box,
@@ -496,8 +492,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  height: 54px;
-  padding: 0 18px;
+  height: 48px;
+  padding: 0 16px;
   background: var(--input-bg);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -529,8 +525,8 @@
 .category-card {
   position: relative;
   overflow: hidden;
-  min-height: 320px;
-  padding: 34px 30px 22px;
+  min-height: 296px;
+  padding: 28px 24px 20px;
 }
 
 .card-accent {
@@ -559,8 +555,8 @@
 
 .category-card h3,
 .course-card h3 {
-  margin: 22px 0 4px;
-  font-size: 21px;
+  margin: 18px 0 4px;
+  font-size: 18px;
 }
 
 .category-card p,
@@ -571,20 +567,20 @@
 }
 
 .category-card p {
-  min-height: 74px;
+  min-height: 64px;
 }
 
 .category-thumb {
   display: grid;
   place-items: center;
-  width: 70px;
-  height: 70px;
+  width: 62px;
+  height: 62px;
   border-radius: 50%;
   overflow: hidden;
   background: color-mix(in srgb, var(--accent, var(--teal)) 15%, white);
   border: 1px solid color-mix(in srgb, var(--accent, var(--teal)) 30%, white);
   color: var(--accent, var(--teal));
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .category-thumb.large {
@@ -609,10 +605,10 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  min-height: 28px;
-  padding: 0 11px;
+  min-height: 26px;
+  padding: 0 10px;
   border-radius: 999px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
   white-space: nowrap;
 }
@@ -639,7 +635,7 @@
 
 .meta-row {
   flex-wrap: wrap;
-  margin: 18px 0;
+  margin: 15px 0;
   color: var(--muted);
 }
 
@@ -650,7 +646,7 @@
 }
 
 .card-footer {
-  padding-top: 18px;
+  padding-top: 15px;
   border-top: 1px solid var(--line);
 }
 
@@ -694,7 +690,7 @@
 .split-page {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 390px;
-  gap: 28px;
+  gap: 24px;
   align-items: start;
 }
 
@@ -704,14 +700,14 @@
 
 .work-column {
   display: grid;
-  gap: 22px;
+  gap: 18px;
 }
 
 .preview-column {
   position: sticky;
   top: 104px;
   display: grid;
-  gap: 22px;
+  gap: 18px;
 }
 
 .preview-column h3 {

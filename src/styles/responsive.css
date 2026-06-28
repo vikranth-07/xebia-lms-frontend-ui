@@ -77,6 +77,12 @@
     flex-direction: column;
   }
 
+  .sticky-actions {
+    position: static;
+    padding-top: 18px;
+    background: transparent;
+  }
+
   .curriculum-heading {
     grid-template-columns: 1fr;
   }

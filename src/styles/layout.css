@@ -20,16 +20,16 @@
 
 .brand-block {
   display: flex;
-  gap: 14px;
+  gap: 12px;
   align-items: center;
-  min-height: 112px;
-  padding: 22px 28px;
+  min-height: 96px;
+  padding: 18px 22px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .brand-block img {
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
   border-radius: 50%;
   background: var(--bright-velvet);
@@ -38,7 +38,7 @@
 .brand-block strong,
 .sidebar-footer strong {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .brand-block span,
@@ -49,7 +49,7 @@
 }
 
 .menu-label {
-  padding: 30px 28px 12px;
+  padding: 24px 22px 10px;
   color: rgba(255, 255, 255, 0.42);
   font-size: 13px;
   font-weight: 700;
@@ -65,10 +65,10 @@
 .side-nav button {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   width: 100%;
-  min-height: 52px;
-  padding: 0 18px;
+  min-height: 48px;
+  padding: 0 16px;
   border-radius: var(--radius);
   color: rgba(255, 255, 255, 0.78);
   background: transparent;
@@ -87,15 +87,15 @@
   gap: 14px;
   align-items: center;
   margin-top: auto;
-  padding: 22px 26px;
+  padding: 18px 22px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .avatar {
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: var(--bright-velvet);
   color: #fff;
@@ -115,8 +115,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 74px;
-  padding: 0 34px;
+  min-height: 66px;
+  padding: 0 28px;
   border-bottom: 1px solid var(--line);
   background: var(--topbar-bg);
   backdrop-filter: blur(10px);
@@ -144,3 +144,7 @@
 }
 
 .page {
+  width: min(1680px, 100%);
+  margin: 0 auto;
+  padding: 36px 40px 48px;
+}
